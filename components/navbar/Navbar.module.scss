@@ -1,0 +1,22 @@
+.navbar {
+  height: 113px;
+  background-color: rgba($color: #000000, $alpha: 0.35);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav {
+    ul {
+      display: flex;
+      color: white;
+      text-transform: uppercase;
+      gap: 40px;
+
+      li {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+  }
+}
