@@ -75,7 +75,9 @@ function Navbar() {
           <Link href='/register'>
             <a className='text-white mr-5'>REGISTER</a>
           </Link>
-          <Button type='button' label='LOGIN' />
+          <Link href={"/login"}>
+            <Button type='button' label='LOGIN' />
+          </Link>
         </div>
       </div>
     </header>
