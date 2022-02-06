@@ -226,6 +226,63 @@
     background-position: center;
     min-height: 500px;
   }
+
+  .strategicInvestor {
+    position: relative;
+    background-color: #242424;
+    min-height: 400px;
+
+    .wrapStrategicInvestor {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+
+      .imageWrapper {
+        position: relative;
+        height: 100px;
+      }
+    }
+  }
+
+  .footerSection {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 1rem;
+
+    .titleAfterLogo {
+      color: white;
+      span:nth-child(1) {
+        font-weight: 700;
+        font-size: 22px;
+      }
+      span:nth-child(2) {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+
+    .titleFooter {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    ul {
+      li {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+    }
+
+    .sosmedList {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      padding-top: 1.5rem;
+      align-items: center;
+    }
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -263,6 +320,24 @@
 
       .wrapCardGameList {
         grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .strategicInvestor {
+      .wrapStrategicInvestor {
+        grid-template-columns: repeat(2, 1fr);
+
+        .imageWrapper {
+          height: 80px;
+        }
+      }
+    }
+
+    .footerSection {
+      grid-template-columns: repeat(2, 1fr);
+
+      .sosmedList {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }
@@ -306,6 +381,24 @@
         grid-template-columns: repeat(1, 1fr);
       }
     }
+
+    .strategicInvestor {
+      .wrapStrategicInvestor {
+        grid-template-columns: repeat(3, 1fr);
+
+        .imageWrapper {
+          height: 100px;
+        }
+      }
+    }
+
+    .footerSection {
+      grid-template-columns: repeat(2, 1fr);
+
+      .sosmedList {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
   }
 }
 
@@ -340,6 +433,16 @@
       .wrapCardGameList {
         grid-template-columns: repeat(3, 1fr);
       }
+    }
+
+    .strategicInvestor {
+      .wrapStrategicInvestor {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .footerSection {
+      grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     }
   }
 }

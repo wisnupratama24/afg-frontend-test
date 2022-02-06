@@ -6,6 +6,8 @@ import CompanyList from "./CompanyList";
 import VideoSection from "./VideoSection";
 import GameList from "./GameList";
 import NewsSection from "./NewsSection";
+import StrategicInvestorSection from "./StrategicInvestorSection";
+import FooterSection from "./FooterSection";
 
 function Home() {
   return (
@@ -16,6 +18,8 @@ function Home() {
         <VideoSection />
         <GameList />
         <NewsSection />
+        <StrategicInvestorSection />
+        <FooterSection />
       </div>
     </Layout>
   );

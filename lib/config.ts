@@ -1,0 +1,1 @@
+export const domains = "localhost:3000"
